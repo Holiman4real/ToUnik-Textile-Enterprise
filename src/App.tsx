@@ -15,16 +15,16 @@ export default function App() {
   const [selectedFabricForInquiry, setSelectedFabricForInquiry] = useState<string>('');
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.querySelector(sectionId);
+    const targetId = sectionId.replace('#', '');
+    const element = document.getElementById(targetId) || document.querySelector(sectionId);
     if (element) {
-      const offset = 80;
-      const bodyRect = document.body.getBoundingClientRect().top;
-      const elementRect = element.getBoundingClientRect().top;
-      const elementPosition = elementRect - bodyRect;
-      const offsetPosition = elementPosition - offset;
+      const offset = window.innerWidth < 640 ? 68 : 80;
+      const rect = element.getBoundingClientRect();
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const offsetPosition = rect.top + scrollTop - offset;
 
       window.scrollTo({
-        top: offsetPosition,
+        top: Math.max(0, offsetPosition),
         behavior: 'smooth',
       });
     }

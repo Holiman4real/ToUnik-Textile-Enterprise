@@ -1,6 +1,15 @@
 @import "tailwindcss";
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* 80px offset for sticky navbar */
+  }
+
+  section {
+    scroll-margin-top: 5rem;
+  }
+
   :root {
     --font-cinzel: 'Cinzel', Georgia, serif;
     --font-cormorant: 'Cormorant Garamond', Georgia, serif;
