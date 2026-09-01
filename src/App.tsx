@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { About } from './components/About';
@@ -13,6 +13,10 @@ import { BackToTop } from './components/BackToTop';
 
 export default function App() {
   const [selectedFabricForInquiry, setSelectedFabricForInquiry] = useState<string>('');
+
+  useEffect(() => {
+    document.title = "ToUnik Textile | Home of Quality Adire Wears";
+  }, []);
 
   const scrollToSection = (sectionId: string) => {
     const targetId = sectionId.replace('#', '');

@@ -173,12 +173,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
               <motion.a
                 whileHover={{ scale: 1.04 }}
                 id="header-phone-link"
-                href="tel:08053383107"
+                href="tel:08039841783"
                 className="flex items-center gap-2 text-xs font-bold text-white hover:text-[#D4AF37] transition-colors px-3 py-1.5 rounded-lg border border-white/25 hover:border-[#D4AF37] bg-white/10 backdrop-blur-xs shadow-xs"
                 title="Call ToUnik Textiles"
               >
                 <Phone className="w-3.5 h-3.5 text-[#D4AF37]" />
-                <span>08053383107</span>
+                <span>08039841783</span>
               </motion.a>
 
               <motion.button
@@ -256,11 +256,11 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenEnquiry }) => {
               <div className="pt-3 border-t border-white/15 flex flex-col gap-2.5">
                 <a
                   id="mobile-phone-call-btn"
-                  href="tel:08053383107"
+                  href="tel:08039841783"
                   className="min-h-[48px] flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white/10 text-white text-sm font-semibold hover:bg-white/20 active:bg-white/30 border border-white/20 transition-all active:scale-[0.98]"
                 >
                   <Phone className="w-4 h-4 text-[#D4AF37]" />
-                  <span>Direct Call: 08053383107</span>
+                  <span>Direct Call: 08039841783</span>
                 </a>
 
                 <button

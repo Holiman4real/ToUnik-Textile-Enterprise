@@ -85,9 +85,10 @@ export const AdireHeritage: React.FC = () => {
           >
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
               <img
-                src="https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop"
+                src="https://i.imgur.com/inscGyO.png"
                 alt="Traditional Yoruba dye pots and authentic textile crafting"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B132B]/80 via-transparent to-transparent" />
               <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#0B132B] border border-[#D4AF37] shadow-sm">
@@ -116,9 +117,10 @@ export const AdireHeritage: React.FC = () => {
           >
             <div className="relative aspect-[4/3] overflow-hidden bg-gray-100">
               <img
-                src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=800&auto=format&fit=crop"
+                src="https://i.imgur.com/pz3w03Y.png"
                 alt="Modern African fashion model wearing elegant Adire gown"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                referrerPolicy="no-referrer"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0B132B]/80 via-transparent to-transparent" />
               <div className="absolute top-3 left-3 bg-white/95 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider text-[#008080] border border-[#008080]/40 shadow-sm">

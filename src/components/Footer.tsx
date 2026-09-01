@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Instagram, ArrowRight } from 'lucide-react';
+import { Phone, Instagram, ArrowRight, Mail, Facebook } from 'lucide-react';
 import { motion } from 'motion/react';
 import { AdirePattern } from './AdirePattern';
 
@@ -101,7 +101,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
               <motion.a
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                href="tel:08053383107"
+                href="tel:08039841783"
                 className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-[#D4AF37] text-gray-800 hover:text-[#0B132B] shadow-xs hover:shadow-md transition-all"
               >
                 <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#D4AF37]/40 flex items-center justify-center text-[#B8860B] flex-shrink-0">
@@ -109,14 +109,29 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-500 block uppercase font-bold">Call / WhatsApp</span>
-                  <span className="font-bold text-[#0B132B]">08053383107</span>
+                  <span className="font-bold text-[#0B132B]">08039841783</span>
                 </div>
               </motion.a>
 
               <motion.a
                 whileHover={{ scale: 1.02, y: -2 }}
                 whileTap={{ scale: 0.98 }}
-                href="https://instagram.com/graceful_adirefabrics"
+                href="mailto:sowandeadepeju@gmail.com"
+                className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-[#D4AF37] text-gray-800 hover:text-[#0B132B] shadow-xs hover:shadow-md transition-all"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#FAF8F5] border border-[#D4AF37]/40 flex items-center justify-center text-[#B8860B] flex-shrink-0">
+                  <Mail className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-[10px] text-gray-500 block uppercase font-bold">Official Email</span>
+                  <span className="font-bold text-[#0B132B] truncate block">sowandeadepeju@gmail.com</span>
+                </div>
+              </motion.a>
+
+              <motion.a
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                href="https://instagram.com/touniktextiles"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-[#800020] text-gray-800 hover:text-[#0B132B] shadow-xs hover:shadow-md transition-all"
@@ -126,7 +141,24 @@ export const Footer: React.FC<FooterProps> = ({ onNavClick }) => {
                 </div>
                 <div>
                   <span className="text-[10px] text-gray-500 block uppercase font-bold">Official Instagram</span>
-                  <span className="font-bold text-[#0B132B]">@graceful_adirefabrics</span>
+                  <span className="font-bold text-[#0B132B]">@touniktextiles</span>
+                </div>
+              </motion.a>
+
+              <motion.a
+                whileHover={{ scale: 1.02, y: -2 }}
+                whileTap={{ scale: 0.98 }}
+                href="https://facebook.com/sowande.adepeju"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 p-3 rounded-xl bg-white border border-gray-200 hover:border-[#1877F2] text-gray-800 hover:text-[#0B132B] shadow-xs hover:shadow-md transition-all"
+              >
+                <div className="w-8 h-8 rounded-lg bg-[#1877F2]/10 border border-[#1877F2]/30 flex items-center justify-center text-[#1877F2] flex-shrink-0">
+                  <Facebook className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="text-[10px] text-gray-500 block uppercase font-bold">Facebook Page</span>
+                  <span className="font-bold text-[#0B132B]">@sowande.adepeju</span>
                 </div>
               </motion.a>
             </div>

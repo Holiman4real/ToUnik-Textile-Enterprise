@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, MessageCircle, Phone, ArrowUpRight } from 'lucide-react';
+import { Instagram, MessageCircle, Phone, ArrowUpRight, Mail, Facebook } from 'lucide-react';
 import { motion } from 'motion/react';
 import { AdirePattern } from './AdirePattern';
 
@@ -31,25 +31,53 @@ export const SocialConnect: React.FC = () => {
               Connect with ToUnik Textiles Today
             </h3>
             <p className="text-xs sm:text-sm text-gray-600 font-normal">
-              Follow our fresh seasonal drops on Instagram or message our master dyers directly on WhatsApp.
+              Follow our fresh seasonal drops on Instagram & Facebook, message our master dyers on WhatsApp, or email us directly.
             </p>
           </div>
 
           {/* Social and Quick Action Buttons */}
           <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4 w-full lg:w-auto">
             
+            {/* Email Button */}
+            <motion.a
+              whileHover={{ scale: 1.03, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              id="social-email-btn"
+              href="mailto:sowandeadepeju@gmail.com"
+              className="min-h-[48px] inline-flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 rounded-xl bg-[#008080] hover:bg-[#006666] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+            >
+              <Mail className="w-4 h-4 text-[#D4AF37]" />
+              <span>sowandeadepeju@gmail.com</span>
+              <ArrowUpRight className="w-4 h-4 opacity-80" />
+            </motion.a>
+
             {/* Instagram Button */}
             <motion.a
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.97 }}
               id="social-instagram-btn"
-              href="https://instagram.com/graceful_adirefabrics"
+              href="https://instagram.com/touniktextiles"
               target="_blank"
               rel="noopener noreferrer"
               className="min-h-[48px] inline-flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 rounded-xl bg-[#800020] hover:bg-[#5e0017] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
             >
               <Instagram className="w-4 h-4 text-[#D4AF37]" />
-              <span>@graceful_adirefabrics</span>
+              <span>@touniktextiles</span>
+              <ArrowUpRight className="w-4 h-4 opacity-80" />
+            </motion.a>
+
+            {/* Facebook Button */}
+            <motion.a
+              whileHover={{ scale: 1.03, y: -2 }}
+              whileTap={{ scale: 0.97 }}
+              id="social-facebook-btn"
+              href="https://facebook.com/sowande.adepeju"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="min-h-[48px] inline-flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 rounded-xl bg-[#1877F2] hover:bg-[#0d65d9] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
+            >
+              <Facebook className="w-4 h-4 text-white" />
+              <span>@sowande.adepeju</span>
               <ArrowUpRight className="w-4 h-4 opacity-80" />
             </motion.a>
 
@@ -58,13 +86,13 @@ export const SocialConnect: React.FC = () => {
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.97 }}
               id="social-whatsapp-btn"
-              href="https://wa.me/2348053383107?text=Hello%20ToUnik%20Textiles,%20I%20would%20like%20to%20enquire%20about%20Adire%20fabrics."
+              href="https://wa.me/2348039841783?text=Hello%20ToUnik%20Textiles,%20I%20would%20like%20to%20enquire%20about%20Adire%20fabrics."
               target="_blank"
               rel="noopener noreferrer"
               className="min-h-[48px] inline-flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#1ebd59] text-white font-bold text-xs uppercase tracking-wider shadow-md hover:shadow-lg transition-all duration-200 cursor-pointer"
             >
               <MessageCircle className="w-4 h-4 text-white" />
-              <span>WhatsApp: 08053383107</span>
+              <span>WhatsApp: 08039841783</span>
               <ArrowUpRight className="w-4 h-4 opacity-80" />
             </motion.a>
 
@@ -73,11 +101,11 @@ export const SocialConnect: React.FC = () => {
               whileHover={{ scale: 1.03, y: -2 }}
               whileTap={{ scale: 0.97 }}
               id="social-phone-btn"
-              href="tel:08053383107"
+              href="tel:08039841783"
               className="min-h-[48px] inline-flex items-center justify-center gap-3 px-5 sm:px-6 py-3.5 rounded-xl bg-[#0B132B] hover:bg-[#B8860B] text-white font-bold text-xs uppercase tracking-wider shadow-md transition-all duration-200 cursor-pointer group"
             >
               <Phone className="w-4 h-4 text-[#D4AF37] group-hover:text-white transition-colors" />
-              <span>Call 08053383107</span>
+              <span>Call 08039841783</span>
             </motion.a>
 
           </div>

@@ -134,7 +134,7 @@ export const FabricDetailModal: React.FC<FabricDetailModalProps> = ({
 
                   {/* Thumbnail Selector Strip if multiple images */}
                   {hasMultipleImages && (
-                    <div className={`grid gap-2 ${images.length >= 4 ? 'grid-cols-4' : 'grid-cols-3'}`}>
+                    <div className={`grid gap-2 ${images.length >= 5 ? 'grid-cols-5' : images.length === 4 ? 'grid-cols-4' : 'grid-cols-3'}`}>
                       {images.map((imgUrl, idx) => (
                         <button
                           key={idx}
@@ -249,11 +249,11 @@ export const FabricDetailModal: React.FC<FabricDetailModalProps> = ({
                     <motion.a
                       whileHover={{ scale: 1.02 }}
                       whileTap={{ scale: 0.98 }}
-                      href="tel:08053383107"
+                      href="tel:08039841783"
                       className="min-h-[48px] py-3.5 px-4 rounded-xl font-bold text-xs uppercase tracking-wider text-white bg-[#0B132B] border border-white/20 hover:border-[#D4AF37] flex items-center justify-center gap-2 transition-colors"
                     >
                       <Phone className="w-4 h-4 text-[#D4AF37]" />
-                      <span>Call 08053383107</span>
+                      <span>Call 08039841783</span>
                     </motion.a>
                   </div>
 

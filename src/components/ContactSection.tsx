@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, Instagram, Send, CheckCircle2, AlertCircle, Loader2, Sparkles, MessageCircle } from 'lucide-react';
+import { Phone, Instagram, Send, CheckCircle2, AlertCircle, Loader2, Sparkles, MessageCircle, Mail, Facebook } from 'lucide-react';
 import { motion } from 'motion/react';
 import { ContactFormData, FormErrors } from '../types';
 import { AdirePattern } from './AdirePattern';
@@ -188,7 +188,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   id="contact-phone-card"
-                  href="tel:08053383107"
+                  href="tel:08039841783"
                   className="flex items-center gap-3.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg transition-all group cursor-pointer"
                 >
                   <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#FAF8F5] border border-[#D4AF37]/40 flex items-center justify-center text-[#B8860B] group-hover:scale-110 transition-transform flex-shrink-0">
@@ -197,7 +197,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   <div className="min-w-0">
                     <span className="text-[11px] sm:text-xs text-gray-500 block font-medium">Direct Phone Call</span>
                     <span className="text-base sm:text-lg font-bold text-[#0B132B] group-hover:text-[#B8860B] transition-colors truncate block">
-                      08053383107
+                      08039841783
                     </span>
                     <span className="text-[10px] sm:text-[11px] text-[#008080] block font-medium">Tap to call directly</span>
                   </div>
@@ -208,7 +208,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   id="contact-whatsapp-card"
-                  href="https://wa.me/2348053383107?text=Hello%20ToUnik%20Textiles,%20I%20am%20interested%20in%20your%20authentic%20Adire%20fabrics."
+                  href="https://wa.me/2348039841783?text=Hello%20ToUnik%20Textiles,%20I%20am%20interested%20in%20your%20authentic%20Adire%20fabrics."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#25D366] hover:shadow-lg transition-all group cursor-pointer"
@@ -219,9 +219,29 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   <div className="min-w-0">
                     <span className="text-[11px] sm:text-xs text-gray-500 block font-medium">WhatsApp Direct Chat</span>
                     <span className="text-base sm:text-lg font-bold text-[#0B132B] group-hover:text-[#25D366] transition-colors truncate block">
-                      08053383107
+                      08039841783
                     </span>
                     <span className="text-[10px] sm:text-[11px] text-gray-600 block font-medium">Instant replies & swatches</span>
+                  </div>
+                </motion.a>
+
+                {/* Email Direct Link */}
+                <motion.a
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  id="contact-email-card"
+                  href="mailto:sowandeadepeju@gmail.com"
+                  className="flex items-center gap-3.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#D4AF37] hover:shadow-lg transition-all group cursor-pointer"
+                >
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#FAF8F5] border border-[#D4AF37]/40 flex items-center justify-center text-[#B8860B] group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <span className="text-[11px] sm:text-xs text-gray-500 block font-medium">Official Email Address</span>
+                    <span className="text-base sm:text-lg font-bold text-[#0B132B] group-hover:text-[#B8860B] transition-colors truncate block">
+                      sowandeadepeju@gmail.com
+                    </span>
+                    <span className="text-[10px] sm:text-[11px] text-[#008080] block font-medium">Tap to send direct email</span>
                   </div>
                 </motion.a>
 
@@ -230,7 +250,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   whileHover={{ scale: 1.02, y: -2 }}
                   whileTap={{ scale: 0.98 }}
                   id="contact-instagram-card"
-                  href="https://instagram.com/graceful_adirefabrics"
+                  href="https://instagram.com/touniktextiles"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-3.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#800020] hover:shadow-lg transition-all group cursor-pointer"
@@ -241,9 +261,31 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                   <div className="min-w-0">
                     <span className="text-[11px] sm:text-xs text-gray-500 block font-medium">Instagram Showcase</span>
                     <span className="text-base sm:text-lg font-bold text-[#0B132B] group-hover:text-[#800020] transition-colors truncate block">
-                      @graceful_adirefabrics
+                      @touniktextiles
                     </span>
                     <span className="text-[10px] sm:text-[11px] text-gray-600 block font-medium">Official design catalogue</span>
+                  </div>
+                </motion.a>
+
+                {/* Facebook Profile */}
+                <motion.a
+                  whileHover={{ scale: 1.02, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
+                  id="contact-facebook-card"
+                  href="https://facebook.com/sowande.adepeju"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3.5 sm:gap-4 p-3.5 sm:p-4 rounded-2xl bg-white border border-gray-200 hover:border-[#1877F2] hover:shadow-lg transition-all group cursor-pointer"
+                >
+                  <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-[#1877F2]/10 border border-[#1877F2]/30 flex items-center justify-center text-[#1877F2] group-hover:scale-110 transition-transform flex-shrink-0">
+                    <Facebook className="w-5 h-5" />
+                  </div>
+                  <div className="min-w-0">
+                    <span className="text-[11px] sm:text-xs text-gray-500 block font-medium">Facebook Page</span>
+                    <span className="text-base sm:text-lg font-bold text-[#0B132B] group-hover:text-[#1877F2] transition-colors truncate block">
+                      @sowande.adepeju
+                    </span>
+                    <span className="text-[10px] sm:text-[11px] text-gray-600 block font-medium">Community & updates</span>
                   </div>
                 </motion.a>
 
@@ -351,7 +393,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                       name="email"
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="name@example.com"
+                      placeholder="sowandeadepeju@gmail.com"
                       className={`w-full px-4 py-3 sm:py-3.5 rounded-xl border text-base sm:text-sm text-[#0B132B] bg-white focus:outline-none transition-all ${
                         errors.email
                           ? 'border-[#800020] bg-[#800020]/5 focus:ring-2 focus:ring-[#800020]'
@@ -373,7 +415,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                       name="phone"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      placeholder="e.g. 08053383107"
+                      placeholder="e.g. 08039841783"
                       className={`w-full px-4 py-3 sm:py-3.5 rounded-xl border text-base sm:text-sm text-[#0B132B] bg-white focus:outline-none transition-all ${
                         errors.phone
                           ? 'border-[#800020] bg-[#800020]/5 focus:ring-2 focus:ring-[#800020]'

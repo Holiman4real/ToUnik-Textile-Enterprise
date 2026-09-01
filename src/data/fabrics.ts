@@ -77,9 +77,13 @@ export const FABRICS: FabricItem[] = [
     baseMaterial: 'Pure Silk Damask & High-Thread Count Egyptian Cotton',
     primaryColors: ['#0A1128', '#D4AF37', '#FAF8F5'],
     colorTheme: 'Deep Indigo Blue & Imperial Gold with Cream accents',
-    imageUrl: 'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: 'https://i.imgur.com/pz3w03Y.png',
     detailImages: [
-      'https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=800&auto=format&fit=crop'
+      'https://i.imgur.com/pz3w03Y.png',
+      'https://i.imgur.com/BivFvOo.png',
+      'https://i.imgur.com/fptS5Uz.png',
+      'https://i.imgur.com/XZPGk6x.png',
+      'https://i.imgur.com/LHSWQmT.png'
     ],
     idealFor: 'Royal Occasion Attire, Luxury Wedding Ensembles, Couture Evening Gowns',
     origin: 'Abeokuta Master Dyers, Nigeria',
@@ -96,9 +100,13 @@ export const FABRICS: FabricItem[] = [
     baseMaterial: 'Custom Choice (Linen, Crepe, Brocade, Organza or Chiffon)',
     primaryColors: ['#0A1128', '#73123A', '#0C5A60', '#D4AF37'],
     colorTheme: 'Customized to your exact color swatch & palette',
-    imageUrl: 'https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: 'https://i.imgur.com/inscGyO.png',
     detailImages: [
-      'https://images.unsplash.com/photo-1544441893-675973e31985?q=80&w=800&auto=format&fit=crop'
+      'https://i.imgur.com/inscGyO.png',
+      'https://i.imgur.com/EFOSnxS.png',
+      'https://i.imgur.com/XYNsIbk.png',
+      'https://i.imgur.com/OcTR247.png',
+      'https://i.imgur.com/E8lhYIs.png'
     ],
     idealFor: 'Aso-Ebi Celebrations, Fashion Brand Collections, Custom Boutique Lines',
     origin: 'Nigeria (Artisan Studio)',
