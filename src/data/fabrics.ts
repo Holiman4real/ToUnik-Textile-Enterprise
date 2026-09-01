@@ -123,9 +123,14 @@ export const FABRICS: FabricItem[] = [
     baseMaterial: '100% Breathable Ankara & Poplin Cotton',
     primaryColors: ['#401438', '#0A1128', '#0C5A60'],
     colorTheme: 'Royal Purple, Deep Indigo & Teal Accents',
-    imageUrl: 'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=1200&auto=format&fit=crop',
+    imageUrl: 'https://i.imgur.com/S9Ygefd.png',
     detailImages: [
-      'https://images.unsplash.com/photo-1558769132-cb1aea458c5e?q=80&w=800&auto=format&fit=crop'
+      'https://i.imgur.com/S9Ygefd.png',
+      'https://i.imgur.com/MRuwbIm.png',
+      'https://i.imgur.com/UhGtRh9.png',
+      'https://i.imgur.com/10SQeFI.png',
+      'https://i.imgur.com/XgfcGkK.png',
+      'https://i.imgur.com/R77J3S2.png'
     ],
     idealFor: 'Contemporary African Ready-to-Wear, Two-Piece Sets, Urban African Streetwear',
     origin: 'Nigeria (Heritage Guild)',

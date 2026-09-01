@@ -134,7 +134,7 @@ export const FabricDetailModal: React.FC<FabricDetailModalProps> = ({
 
                   {/* Thumbnail Selector Strip if multiple images */}
                   {hasMultipleImages && (
-                    <div className={`grid gap-2 ${images.length >= 5 ? 'grid-cols-5' : images.length === 4 ? 'grid-cols-4' : 'grid-cols-3'}`}>
+                    <div className={`grid gap-2 ${images.length >= 6 ? 'grid-cols-3 sm:grid-cols-6' : images.length === 5 ? 'grid-cols-5' : images.length === 4 ? 'grid-cols-4' : 'grid-cols-3'}`}>
                       {images.map((imgUrl, idx) => (
                         <button
                           key={idx}
