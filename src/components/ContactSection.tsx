@@ -369,7 +369,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                     name="fullName"
                     value={formData.fullName}
                     onChange={handleInputChange}
-                    placeholder="e.g. Olawale Ogunlana"
+                    placeholder="e.g. Sowande Adepeju"
                     className={`w-full px-4 py-3 sm:py-3.5 rounded-xl border text-base sm:text-sm text-[#0B132B] bg-white focus:outline-none transition-all ${
                       errors.fullName
                         ? 'border-[#800020] bg-[#800020]/5 focus:ring-2 focus:ring-[#800020]'
