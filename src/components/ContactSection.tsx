@@ -87,23 +87,56 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
     setIsSubmitting(true);
 
     try {
-      // Simulate clean network request with timeout
-      await new Promise((resolve) => setTimeout(resolve, 1200));
-
-      setSubmitStatus('success');
-      setFormData({
-        fullName: '',
-        email: '',
-        phone: '',
-        subject: '',
-        fabricPreference: '',
-        message: '',
-        orderType: 'Personal',
+      const response = await fetch('https://formspree.io/f/moeqegbq', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          name: formData.fullName,
+          email: formData.email,
+          _replyto: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          orderType: formData.orderType,
+          fabricPreference: formData.fabricPreference || 'Not specified',
+          message: formData.message,
+          _subject: `New ToUnik Textiles Inquiry: ${formData.subject} (${formData.fullName})`,
+        }),
       });
-      setErrors({});
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({
+          fullName: '',
+          email: '',
+          phone: '',
+          subject: '',
+          fabricPreference: '',
+          message: '',
+          orderType: 'Personal',
+        });
+        setErrors({});
+      } else {
+        const data = await response.json().catch(() => null);
+        if (data && data.errors && Array.isArray(data.errors) && data.errors.length > 0) {
+          const detail = data.errors
+            .map((err: { message?: string }) => err.message)
+            .filter(Boolean)
+            .join(', ');
+          setErrorMessage(detail || 'Unable to submit your message. Please check the details and try again.');
+        } else if (data && data.error) {
+          setErrorMessage(typeof data.error === 'string' ? data.error : 'Unable to submit your message. Please try again.');
+        } else {
+          setErrorMessage('Unable to submit your inquiry at this moment. Please reach out directly via WhatsApp or phone.');
+        }
+        setSubmitStatus('error');
+      }
     } catch {
       setSubmitStatus('error');
-      setErrorMessage('An unexpected error occurred while sending your message. Please try calling or reaching out via WhatsApp.');
+      setErrorMessage('Network connection error. Please check your internet connection or reach out directly via WhatsApp / phone.');
     } finally {
       setIsSubmitting(false);
     }
@@ -356,7 +389,13 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ initialFabricSel
                 </motion.div>
               )}
 
-              <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5" noValidate>
+              <form
+                action="https://formspree.io/f/moeqegbq"
+                method="POST"
+                onSubmit={handleSubmit}
+                className="space-y-4 sm:space-y-5"
+                noValidate
+              >
                 
                 {/* Full Name Field */}
                 <div>
